@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+}
+
+#nav {
+	/* background-color: red; */
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+
+#nav-part1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+}
+
+.round {
+	height: 22px;
+	width: 22px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+#nav-part2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+
+#nav-part2 h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#nav-part2 h4 span {
+	color: rgb(71, 71, 71);
+	margin-left: 25px;
+}
+
+#nav2 {
+	height: 70px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 100px;
+	padding: 0 50px;
+}
+
+#nav2 h3 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#content {
+	width: 100%;
+	height: calc(100% - 150px);
+	/* background-color: aquamarine; */
+}
+
+#text-content {
+	height: 45%;
+	width: 100%;
+	background-color: burlywood;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar {
+	background-color: transparent;
+	height: 3px;
+}
+#text-content::-webkit-scrollbar-thumb {
+	background-color: orangered;
+}
+
+.elem {
+	flex-shrink: 0;
+	width: 60%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.elem h1 {
+	font-size: 130px;
+	font-weight: 300;
+}
+
+#image-content {
+	width: 100%;
+	height: 357px;
+	background-color: rebeccapurple;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+#image-content::-webkit-scrollbar {
+	background-color: transparent;
+	height: 4px;
+}
+
+#image-content::-webkit-scrollbar-thumb {
+	background-color: orangered;
+}
+
+#image-content img {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
